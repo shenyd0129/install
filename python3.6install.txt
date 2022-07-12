@@ -1,0 +1,9 @@
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+
+sudo rm -rf /usr/bin/python
+sudo rm -rf /usr/bin/python3
+sudo ln -s /usr/bin/python3.6 /usr/bin/python
+sudo ln -s /usr/bin/python3.6 /usr/bin/python3
