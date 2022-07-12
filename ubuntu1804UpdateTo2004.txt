@@ -1,0 +1,21 @@
+ubuntu1804升级 2004
+
+1 更新sources.list
+    sudo vim /etc/apt/sources.list
+    '''
+    deb http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse
+    deb http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse
+    deb http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse
+    deb http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse
+    deb http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse
+    deb-src http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse
+    deb-src http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse
+    deb-src http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse
+    deb-src http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse
+    deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse
+    '''
+    sudo apt-get update
+2.sudo apt upgrade
+3.lsb_release -a
+4.sudo apt install update-manager-core
+5.sudo do-release-upgrade
